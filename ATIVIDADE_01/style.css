@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#cabecalho {
+    background-color: #1B3E6A;
+    background-attachment: fixed;
+    width: 800px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px 0;
+    border-bottom: 10px solid #FF9900;
+}
+
+#cabecalho img{
+    display: block;
+    margin: 0 auto; 
+    width: 200px;
+}
+
+#img_fachada1{
+    width: 300px;
+    float: left;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+#img_fachada2 {
+    width: 300px;
+    float: right;
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
+#conteudo p{
+    margin-bottom: 10px;
+}
+
+#rodape{
+    background-color: #FF9900;
+    width: 800px;
+    text-align: center;
+    padding: 20px 0; /* 20px de altura e 0 de largura */
+}
