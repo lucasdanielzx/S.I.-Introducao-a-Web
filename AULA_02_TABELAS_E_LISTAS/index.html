@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02 - Tabelas e Listas</title>
+    <style> 
+        table{
+            margin: 0 auto;
+            border-collapse: collapse; 
+        }
+        table thead{
+            background-color: rgb(104, 173, 252);
+        }
+        table img{
+            width: 100px;
+            height: 70px;
+        }
+        table td{
+            padding: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+    <!--border-collapse: collapse -> linha fina-->
+    <!-- padding: espaçamento entre o conteúdo e as bordas da tabela -->
+</head>
+<body>
+    <h1>Cidades e Estados do Brasil</h1>
+
+    <table border="1">
+        <thead><!-- Cabeçalho da tabela  -->
+            <tr> <!-- Linhas -->
+                <th>Regiões</th> <!-- Celula do cabeçalho da tabela (colunas) -->
+                <th>Estado</th> 
+                <th>Bandeiras</th>
+                <th>Sigla</th>
+                <th>Cidades</th>
+            </tr>
+        </thead> 
+        <tbody> <!-- Corpo da tabela  -->
+            <tr>
+                <td rowspan="4">Nordeste</td> <!-- rowspan: propriedade para mesclar linhas -->
+                <td>Bahia</td> <!-- Table dado - dado no corpo da tabela (colunas do corpo)  -->
+                <td><img src="./bandeiras/bahia.png" alt="Bandeira Bahia"></td>
+                <td>BA</td>     
+                <td>
+                    <ul> <!-- ul: lista não ordenada - marcador com ponto; ol: lista ordenada - numeração (type="I")-->
+                        <li>Salvador</li> <!-- Item da lista -->
+                        <li>Paulo Afonso</li> 
+                        <li>Feira de Santana</li> 
+                        <li>Glória</li> 
+                        <li>Jeremoabo</li> 
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td><img src="./bandeiras/alagoas.png" alt="Bandeira Alagoas"></td>
+                <td>AL</td>
+                <td>
+                    <ul>
+                        <li>Macéio</li>
+                        <li>Penedo</li>
+                        <li>Delmiro Gouveia</li>
+                        <li>Água Branca</li>
+                        <li>Piranhas</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td> 
+                <td><img src="./bandeiras/pernambuco.png" alt="Bandeira Pernambuco"></td>
+                <td>PE</td>
+                <td>Recife</td>
+            </tr>
+            <tr>
+                <td>Maranhão</td>
+                <td><img src="./bandeiras/maranhao.png" alt="Bandeira Maranhão"></td>
+                <td>MA</td>
+                <td>São Luis</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Sudeste</td>
+                <td>São Paulo</td>
+                <td><img src="./bandeiras/sao_paulo.png" alt="Bandeira São Paulo"></td>
+                <td>SP</td>
+                <td>São Bernardo</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td><img src="./bandeiras/rio_janeiro.jfif" alt="Bandeira Rio de Janeiro"></td>
+                <td>RJ</td>
+                <td>Rio das Ostras</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Sul</td>
+                <td>Rio Grande do Sul</td>
+                <td><img src="./bandeiras/rio_grande_sul.jfif" alt="Bandeira Rio Grande do Sul"></td>
+                <td>RS</td>
+                <td>Porto Alegre</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td><img src="./bandeiras/santa_catarina.png" alt="Bandeira Santa Catarina"></td>
+                <td>SC</td>
+                <td>Florianópolis</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
