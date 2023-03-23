@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa 02 - Tabelas</title>
+    <meta name="description" content="Segunda atividade da disciplina de Introdução a Web">
+    <meta name="keywords" content="html, sistemas, unirios, css, tabelas, table, thead, tbody, th, td, tr">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Game of Thrones</h1>
+ 
+    <h2>Temporadas</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Temporadas</th>
+                <th rowspan="2">Episódios</th>
+                <th colspan="2">Exibição original</th>             
+            </tr>
+            <tr>
+                <th>Início</td>
+                <th>Término</th>  
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="coluna1">1</td>
+                <td>10</td>
+                <td>17 de abril de 2011</td>
+                <td>19 de junho de 2011</td>
+            </tr>
+            <tr>
+                <td id="coluna1">2</td>
+                <td>10</td>
+                <td>1 de abril de 2012</td>
+                <td>3 de junho de 2012</td>
+            </tr>
+            <tr>
+                <td id="coluna1">3</td>
+                <td>10</td>
+                <td>31 de março de 2013</td>
+                <td>9 de junho de 2013</td>
+            </tr>
+            <tr>
+                <td id="coluna1">4</td>
+                <td>10</td>
+                <td>6 de abril de 2014</td>
+                <td>15 de junho de 2014</td>
+            </tr>
+            <tr>
+                <td id="coluna1">5</td>
+                <td>10</td>
+                <td>12 de abril de 2015</td>
+                <td>14 de junho de 2015</td>
+            </tr>
+            <tr>
+                <td id="coluna1">6</td>
+                <td>10</td>
+                <td>24 de abril de 2016</td>
+                <td>26 de junho de 2016</td>
+            </tr>
+            <tr>
+                <td id="coluna1">7</td>
+                <td>7</td>
+                <td>16 de julho de 2017</td>
+                <td>27 de agosto de 2017</td>
+            </tr>
+            <tr>
+                <td id="coluna1">8</td>
+                <td>6</td>
+                <td>14 de abril de 2019</td>
+                <td>19 de maio de 2019</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Casas e Personagens</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th>CASAS</th>
+                <th>BRASÃO</th>
+                <th>LEMA</th>
+                <th>PERSONAGENS PRINCIPAIS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="coluna1">Stark</td>
+                <td><img src="./imagens/stark.jpg" alt="Brasão Stark" id="brasao"></td>
+                <td id="italico">"O inverno está chegando"</td>
+                <td>
+                    <ul id="lista_personagens">
+                        <li>Eddard Stark</li>
+                        <li>Jon Snow</li>
+                        <li>Sansa Stark</li>
+                        <li>Arya Stark</li>
+                        <li>Bran Stark</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td id="coluna1">Lannister</td>
+                <td><img src="./imagens/lannister.jpg" alt="Brasão Lannister" id="brasao"></td>
+                <td id="italico">"Ouça-me Rugir"</td>
+                <td>
+                    <ul id="lista_personagens">
+                        <li>Tywin Lannister</li>
+                        <li>Cersei Lannister</li>
+                        <li>Jaime Lannister</li>
+                        <li>Tyrion Lannister</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td id="coluna1">Targaryen</td>
+                <td><img src="./imagens/targaryen.jpg" alt="Bordão Targaryen" id="brasao"></td>
+                <td id="italico">"Fogo e Sangue"</td>
+                <td>
+                    <ul id="lista_personagens">
+                        <li>Aegon Targaryen</li>
+                        <li>Visenya Targaryen</li>
+                        <li>Viserys Targaryen</li>
+                        <li>Daenerys Targaryen</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td id="coluna1">Baratheon</td>
+                <td><img src="./imagens/baratheon.jpg" alt="Bordão Baratheon" id="brasao"></td>
+                <td id="italico">Nossa é a Fúria</td>
+                <td>
+                    <ul id="lista_personagens">
+                        <li>Robert Baratheon</li>
+                        <li>Renly Baratheon</li>
+                        <li>Stannis Baratheon</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+
+    </table>
+    <br>
+
+</body>
+</html>

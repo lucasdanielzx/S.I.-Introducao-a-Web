@@ -1,0 +1,34 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+table {
+    width: 800px;
+    border-collapse: collapse; 
+}
+
+table th {
+    background-color: black;
+    color: white;
+}
+
+#coluna1 {
+    font-weight: bold;
+    background-color: #666666;
+}
+
+#italico {
+    font-style: italic;
+}
+
+#lista_personagens {
+    text-align: left;
+}
+
+#brasao {
+    width: 150px;
+    padding: 10px;
+}
