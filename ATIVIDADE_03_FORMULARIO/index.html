@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Netflix</title>
+    <meta name="description" content="Terceira atividade de Web sobre Formulários">
+    <meta name="keywords" content="html, sistemas, unirios, css, form, formulários, netflix">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> <!-- Cabeçalho do corpo do doc -->
+        <img src="./imagens/logo_netflix.png" alt="Logo Netflix">
+    </header>
+
+    <div id="formulario"> <!-- Serve para dividir o site em blocos (agrupar elementos) -->
+        <h1>Cadastro de usuário</h1>
+        
+        <form action=""> <!-- action: para onde vai enviar os dados -->
+            <div>
+                <label for="nome">Nome</label> <!-- Label: legenda/descrição -->
+                <input type="text" id="nome" name="nome">
+            </div>
+
+            <div>
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf">
+            </div>
+
+            <div>
+                <label for="sexo">Sexo</label> <!-- clicar no texto e já selecionar a opção -->
+
+                <input type="radio" name="sexo" id="sexo_m"> 
+                <label for="sexo_m">Masculico</label> <!-- for e id se conectam-->
+
+                <input type="radio" name="sexo" id="sexo_f">
+                <label for="sexo_f">Feminino</label>
+            </div>
+
+            <div>
+                <label for="plano">Planos</label>
+                <select name="planos" id="planos">
+                    <option value="Plano Básico">Plano Básico</option> <!-- value: valor que seria enviado para o banco -->
+                    <option value="Plano HD">Plano HD</option>
+                    <option value="Plano 4K">Plano 4K</option>
+                </select>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
