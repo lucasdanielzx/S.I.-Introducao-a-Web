@@ -1,0 +1,98 @@
+* { /* aplicar em todas as tags html do doc (resetar as config do site) */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box; /* o elemento sempre vai contabilizar no width (não estica o elemento) */
+}
+
+body {
+    background-image: url("./imagens/fundo_netflix.jpg"); /* aplicar background */
+    background-repeat: no-repeat; /* não repetir imagem na página */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header img {
+    width: 150px;
+    margin: 30px;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+select{
+    width: 100%;
+    padding: 14px;
+    border-radius: 5px;
+    background-color: #999;
+}
+
+#formulario {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    max-width: 500px; /* define a largura máxima de um elemento */
+    margin: 0 auto
+}
+
+#formulario h1 {
+    color: #FFF;
+    font-weight: 400; /* peso da fonte */
+    margin-bottom: 30px; /* espaçamento para os cantos */
+}
+
+#formulario label {
+    color: #666;
+    display: block; /* faz o elemento ter comportamento de bloco; inline: transforma em linha */
+}
+
+#formulario div {
+    margin-bottom: 20px;
+}
+
+#formulario div input {
+    padding: 15px;
+    background-color: #999;
+    border: none; /* tirar borda */
+    border-radius: 5px;
+    width: 100%; /* ocupar 100% do bloco */
+}
+
+#formulario div input[type="radio"] {
+    width: auto;
+}
+
+#formulario div input[type="radio"] + label { /* pegar todos os labels que estão logo após um input do tipo radio (sinal de + gera essa relação) */
+    display: inline;
+    margin-right: 20px;
+}
+
+#formulario div input[type="checkbox"] {
+    width: auto;
+}
+
+#formulario div input[type="checkbox"] + label { 
+    display: inline;
+    margin-right: 20px;
+    color: #FFF;
+}
+
+#rodape {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px 0;
+}
+
+#rodape p {
+    text-align: center;
+    color: #666;
+}
+
+#formulario div input[type="submit"]{
+    background-color: red;
+    color:#FFF;
+    font-weight: 600;
+}
+
+#formulario .generos {
+    margin-bottom: 8px;
+}
