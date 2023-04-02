@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 1000px;
+}
+
+div h1 {
+    text-align: center;
+}
+
+div {
+    margin-bottom: 30px;
+}
+
+/* Estilização da div que contém a primeira parte do site (texto) */
+#cabecalho {
+    background-color: #1b3e6a;
+    background-attachment: fixed;
+    border-bottom: 10px solid #FF9900;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+#cabecalho img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+}
+
+#conteudo img {
+    width: 250px;
+    border-radius: 10px;
+}
+
+#conteudo p{
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+#fachada1 {
+    float: left;
+    margin-right: 20px;
+}
+
+#fachada2 {
+    float: right;
+    margin-left: 20px;
+}
+
+#rodape {
+    background-color: #FF9900;
+    background-attachment: fixed;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilização da div que contém a segunda parte do site (tabela) */
+
+#tabela {
+    border-collapse: collapse;
+    margin: 0 auto;
+    width: 800px;
+    margin-top: 20px;
+}
+
+#tabela th {
+    background-color: #1b3e6a;
+    color: white;
+}
+
+#tabela tr {
+    text-align: center;
+}
+
+/* Estilização da div que contém a terceira parte do site (form) */
+#form {
+    background-color: rgba(#1b3e6a, #1b3e6a, #1b3e6a, 0.7);
+    max-width: 500px;
+    margin: 0 auto;
+}
