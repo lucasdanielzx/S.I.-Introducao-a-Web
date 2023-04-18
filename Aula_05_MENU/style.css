@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#menu {
+    background-color: #000;
+}
+
+#menu > ul { /*atingir apenas a ul que está após o elemento pai*/
+    display: flex; 
+    justify-content: center; /*centraliza os itens na tela*/
+}
+
+#menu a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #999;
+    text-decoration: none; /* tirar o sublinhado */
+    display: block; /* converte o elemento em bloco para uso do padding */
+    padding: 20px;
+    transition: all .2s linear; /*transição em todos os elementos em x segundos de forma igual em todo tempo*/
+}
+
+#menu a:hover {
+    background-color: #09c;
+    color: #fff;
+}
+
+#menu ul li{
+    list-style: none; /*remover bolinha da lista*/
+    position: relative;
+    background-color: #000;
+}
+
+#menu ul li .submenu {
+    display: none;
+    position: absolute;
+    width: 150px;
+}
+
+#menu ul li:hover .submenu { /*quando o mouse estiver sobre o li*/
+    display: block;
+}
+
+#menu ul li .submenu li {
+    border-bottom: 1px solid #222;
+}
+
+#menu ul li .submenu a {
+    padding: 10px;
+}
