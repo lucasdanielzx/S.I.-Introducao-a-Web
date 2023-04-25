@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#container {
+    width: 400px;
+    height: 400px;
+    border: 3px solid #000;
+    padding: 30px;
+    margin: 0 auto;
+    position: relative; /*inicializou o relative*/
+    border-radius: 50px;
+    animation-name: anima-container; /*definir nome para animação*/
+    animation-duration: 1s; /*tempo da animação*/
+    animation-fill-mode: forwards; /*parar o objeto na posição final da animação*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes anima-container { /*ligação da animação com o objeto*/
+    from { /*de*/
+        margin-top: -400px;
+        width: 100px;
+        height: 100px;
+    }
+    to { /*até*/
+        margin-top: 100px;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/*#container:hover{
+    background-color: #000;
+}*/
+
+#container div{
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    /*centralização vertical e horizontal:*/
+    display: flex; /*as outras duas funcionam com base no flex*/
+    align-items: center; /*centraliza o elemento na vertical (eixo y)*/
+    justify-content: center; /*centraliza na horizontal (eixo x)*/
+    /*arredondar elementos:*/
+    border-radius: 50%;
+}
+
+#container div span {
+    font-weight: bold; /*bold deixa o texto em negrito*/
+}
+
+#container #box-01 {
+    background-color: #ff0;
+    position: absolute; /*relative: desloca o elemento da posição original dele; absolute: posiciona com relção ao elemento pai*/
+    top: 10px; /*top e left dependem do position*/
+    left: 10px;
+    animation-name: anima-box01;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; /*animação em execução infinita; digitar a quantidade de interações*/
+}
+
+@keyframes anima-box01 {
+    25% { /*em 25% da animação*/
+        top: 10px;
+        left: 285px;
+    }
+    50% { 
+        top: 285px;
+        left: 285px;
+    }
+    75% {
+        top: 285px;
+        left: 10px;
+    }
+}
+
+#container #box-02 {
+    background-color: #f00;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    animation-name: anima-box02;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anima-box02 {
+    25% {
+        top: 285px;
+        right: 10px;
+    }
+    50% { 
+        top: 285px;
+        right: 285px;
+    }
+    75% {
+        top: 10px;
+        right: 285px;
+    }
+}
+
+#container #box-03 {
+    background-color: #0f0;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    animation-name: anima-box03;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anima-box03 {
+    25% {
+        bottom: 10px;
+        right: 285px;
+    }
+    50% { 
+        bottom: 285px;
+        right: 285px;
+    }
+    75% {
+        bottom: 285px;
+        right: 10px;
+    }
+}
+
+#container #box-04 {
+    background-color: #06c;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    animation-name: anima-box04;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes anima-box04 {
+    25% {
+        bottom: 285px;
+        left: 10px;
+    }
+    50% { 
+        bottom: 285px;
+        left: 285px;
+    }
+    75% {
+        bottom: 10px;
+        left: 285px;
+    }
+}
+
+#lgpd {
+    background-color: #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 10px;
+    text-align: justify;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    /*Posicionar botão ao lado do texto com flex:*/
+    display: flex; /*colocar os elementos filhos um ao lado do outro*/
+    gap: 20px; /*espaçamento entre os elementos*/
+    align-items: center; /*centraliza no eixo x do elemento pai*/
+}
+
+#lgpd a {
+    display: block; /*elemento link originalmente é linha*/
+    background-color: #09c;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none; /*tira o sublinhado caracteristico de um link*/
+}
+
+/*pseudoclasse - hover: quando o mouse estiver em cima do elemento, ele terá o seguinte comportamento*/
+#lgpd a:hover {
+    background-color: #06c;
+}
+
+#btn {
+    padding: 10px 20px;
+}
