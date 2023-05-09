@@ -1,0 +1,91 @@
+/* importação de fonte pelo 'fonts google': */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,300;0,900;1,400&display=swap');
+
+* { /* resetar config padrão do navegador */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-family: Raleway;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#cabecalho { 
+    background-color: #000;
+}
+
+#cabecalho .container {
+    /*obter flexibilidade nos elementos filhos:*/
+    display: flex; /*elementos um ao lado do outro*/
+    align-items: center; /*centralizar o elemento, removendo distorção da imagem*/
+    justify-content: space-between; /*elementos em lados opostos*/
+}
+
+#cabecalho #logo {
+    width: 30px;
+}
+
+#cabecalho #menu ul {
+    display: flex;
+}
+ 
+#cabecalho #menu li {
+    list-style: none; /* remover ponto da lista */
+}
+
+#cabecalho #menu a {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    color: #CCC;
+    transition: all 0.3s linear; /* transição mais suave */
+}
+
+#cabecalho #menu a:hover {
+    background-color: #06C;
+}
+
+#historia {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#historia img {
+    float: left;
+    margin-right: 20px;
+    width: 500px;
+    border-radius: 20px;
+}
+
+#historia p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+#rodape {
+    background-color: #000;
+    padding: 30px;
+    color: #666;
+    text-align: center;
+    font-size: 12px;
+}
+
+#rodape a {
+    color: #06C;
+    text-decoration: none;
+}
+
+#rodape a:hover {
+    text-decoration: underline;
+}
