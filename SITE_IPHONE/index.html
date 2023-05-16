@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iphone</title>
     <link rel="stylesheet" href="CSS/style.css">
-</head>
+    <link rel="stylesheet" href="plugins/bxslider.css">
+    <script src="plugins/jquery.min.js"></script>
+    <script src="plugins/bxslider.min.js"></script>
+    <script src="js/scripts.js"></script>
+</head> 
 
 <body>
     <header id="cabecalho"><!--cabeçalho do corpo-->
@@ -15,8 +19,8 @@
     
             <nav id="menu"> <!--menu navegação-->
                 <ul>
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#historia">História</a></li> <!-- # no href: ancora pra dentro da propria pagina (vai rolar para a seção)-->
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="index.html#historia">História</a></li> <!-- # no href: ancora pra dentro da propria pagina (vai rolar para a seção)-->
                     <li><a href="pages/modelos.html">Modelos</a></li>
                     <li><a href="pages/fotos.html">Fotos</a></li>
                     <li><a href="pages/videos.html">Vídeos</a></li>
@@ -27,11 +31,13 @@
     </header>
 
     <div id="banners">
-        <ul>
-            <li><img src="imagens/banners/banner_01.jpg" alt="iPhone 13"></li>
-            <li><img src="imagens/banners/banner_02.jpg" alt="iPhone 13 Pro"></li>
-            <li><img src="imagens/banners/banner_03.jpg" alt="iPhone SE"></li>
-        </ul>   
+        <div class="container">
+            <ul>
+                <li><img src="imagens/banners/banner_01.jpg" alt="iPhone 13"></li>
+                <li><img src="imagens/banners/banner_02.jpg" alt="iPhone 13 Pro"></li>
+                <li><img src="imagens/banners/banner_03.jpg" alt="iPhone SE"></li>
+            </ul> 
+        </div>  
     </div>
 
     <section id="historia">
